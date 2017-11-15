@@ -2,15 +2,14 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4723/wd/hub',
 
-  specs: ['Test.js'],
+  specs: ['spec.js'],
 
-  // Reference: https://github.com/appium/sample-code/blob/master/sample-code/examples/node/helpers/caps.js
   capabilities: {
     browserName: 'chrome',
     'appium-version': '1.0',
     platformName: 'Android',
     platformVersion: '6.0',
-    deviceName: 'Android Emulator',
+    deviceName: 'Android Emulator'
   },
 
   baseUrl: 'http://10.0.2.2:8000',
